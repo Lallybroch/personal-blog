@@ -1,6 +1,9 @@
 [package]
-name = "personal-blog"
+name = "yew-app"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+# this is the development version of Yew
+yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+

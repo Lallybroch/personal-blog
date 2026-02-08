@@ -1,3 +1,16 @@
+use yew::prelude::*;
+
+mod homepage;
+
+use homepage::Homepage;
+
+#[component]
+fn App() -> Html {
+    html! {
+        <Homepage/>
+    }
+}
+
 fn main() {
-    println!("Hello, world!");
+    yew::Renderer::<App>::new().render();
 }
