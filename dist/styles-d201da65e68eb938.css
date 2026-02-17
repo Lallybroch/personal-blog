@@ -1,0 +1,141 @@
+body {
+
+
+	background-color: #e0dad0;
+
+
+}
+
+.social {
+
+	margin: 20px;
+	margin-top: -10px;
+	font-size: 20px;
+	font-family:"Special Elite", system-ui;
+}
+
+ @keyframes underscore {
+  0%   {opacity: 1;}
+  50%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.title {
+	
+	font-family:"Special Elite", system-ui;
+	font-size: 80px;
+	height: 200px;
+	width: 80%;
+
+	border-style: double;
+	border-color: Black;
+	border-width: 10px;
+	
+	border-radius: 20px;
+	
+}
+
+.title-underscore {
+	animation-name: underscore;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+
+}
+
+.centre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.post-grid {
+
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 10px;
+	gap: 20px;
+
+}
+
+.post {
+	height: 300px;
+	width: 300px;
+	border-style: solid;
+	border-radius: 35px;
+	padding: 10px 10px;
+	background-color: #dbd7d0;
+	border-color: #89847d;
+	border-width: 2px;
+
+}
+.post:hover {
+
+	border-radius: 20px;
+	border-width:3px;
+	border-color: #635d53;
+	background-color: #d1ccc4;
+
+}
+
+.post-inner {
+
+	position: relative;
+	bottom: 50px;
+}
+
+.post-title {
+
+	font-size: 30px;
+	font-family:"Special Elite", system-ui;
+}
+
+.full-post {
+
+	width: 70%;
+	height: 90%;
+	border-radius: 30px;
+	position:fixed;
+	z-index: 100;
+	left: 15%;
+	top: 5%;
+	right: 15%;
+	overflow: auto;
+	border-style: double;
+	border-color: Black;
+	border-width: 10px;
+
+	
+
+	background-color: #dbd7d0;
+}
+
+.full-post-close {
+	position: fixed;
+	right: 15%;
+	top: 7%;
+	height: 50px;
+	width: 50px;
+	font-size: 30px;
+	border-radius: 60px;
+	border-style: solid;
+	border-width: 2px;
+
+	border-color: Black;
+	background-color: #dbd7d0;
+
+}
+
+.full-post-close:hover {
+	background-color: #e8bbbb;
+}
+
+.full-post-inner {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+
+
+}
