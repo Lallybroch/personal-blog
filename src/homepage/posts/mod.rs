@@ -1,3 +1,3 @@
-mod post1;
+mod post_one;
 
-pub use post1::Post1;
+pub use post_one::PostOne;
