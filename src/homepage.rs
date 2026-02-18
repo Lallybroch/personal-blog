@@ -6,7 +6,7 @@ use yew::Properties;
 
 mod posts;
 
-use posts::Post1;
+use posts::PostOne;
 
 fn create_post(
     post_map: &mut HashMap<String, Html>,
@@ -49,12 +49,13 @@ pub fn Homepage() -> Html {
     let mut blog_posts = HashMap::<String, Html>::new();
     let mut blog_post_short = HashMap::<String, String>::new();
 
+    //Post 1
     create_post(
         &mut blog_posts,
         &mut blog_post_short,
-        Post1::name(),
-        Post1::desc(),
-        Post1::inner(),
+        PostOne::name(),
+        PostOne::desc(),
+        PostOne::inner(),
     );
 
     let post_is_open = use_state(|| false);
@@ -101,7 +102,7 @@ pub fn Homepage() -> Html {
                 </div>
             </div>
             <PostGrid>
-                <Post on_click={&onclick} close={&close} title={"Post One"} post_html={blog_posts.get("Post One").unwrap()} desc={blog_post_short.get("Post One").unwrap().to_string()}/>
+                <Post on_click={&onclick} close={&close} title={"About this Blog"} post_html={blog_posts.get("About this Blog").unwrap()} desc={blog_post_short.get("About this Blog").unwrap().to_string()}/>
             </PostGrid>
         </div>
     }
@@ -151,14 +152,12 @@ fn Post(props: &PostProps) -> Html {
     html! {
         <button class={classes!("post")} onclick={move |_|  click.emit(inner_html.clone())}>
 
-            <div>
 
                 <div class={classes!("post-inner")}>
                     <h2 class={classes!("post-title")}>{title}</h2>
                     <p>
                         {desc}
                     </p>
-                </div>
             </div>
         </button>
 

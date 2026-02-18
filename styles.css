@@ -74,17 +74,16 @@ body {
 .post:hover {
 
 	border-radius: 20px;
-	border-width:3px;
 	border-color: #635d53;
 	background-color: #d1ccc4;
 
 }
 
 .post-inner {
-
-	position: relative;
-	bottom: 50px;
+	height: 300px;
+	margin: 5%;
 }
+
 
 .post-title {
 
@@ -94,14 +93,14 @@ body {
 
 .full-post {
 
-	width: 70%;
+	width: 60%;
 	height: 90%;
 	border-radius: 30px;
 	position:fixed;
 	z-index: 100;
-	left: 15%;
+	left: 20%;
 	top: 5%;
-	right: 15%;
+	right: 20%;
 	overflow: auto;
 	border-style: double;
 	border-color: Black;
@@ -114,7 +113,7 @@ body {
 
 .full-post-close {
 	position: fixed;
-	right: 15%;
+	right: 20%;
 	top: 7%;
 	height: 50px;
 	width: 50px;
